@@ -106,6 +106,7 @@
    font-weight: 400;
    margin-top: 24px;
    margin-bottom: 32px;
+   color:#727272;
 } 
 /* Features Details Section Styles */
 .features-details{
@@ -347,3 +348,130 @@
     color:#424242;
 }
 /* Responsive Design */
+.hide{
+    display: none;
+}
+/* Responsive For Mobile Devices */
+@media screen and (max-width:576px) {
+    /* Navbar Responsive */
+    .header nav {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .header nav .logo {
+        font-size: 24px;
+    }
+    .header nav ul {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .header nav ul li{
+        margin:10px 0;
+    }
+    /* Banner Responsive */
+    .banner-information {
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+   .banner-description, .features-description{
+        padding:0 30px;
+        font-size: 14px;
+    }
+    .primary-btn {
+        font-size: 14px;
+        padding:10px 12px;
+        font-weight: 400;
+    }
+    /* Features Section Responsive */
+    .features-section{
+        flex-direction: column;
+    }
+    .features-section .features-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features-section .features-information{
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding:20px 25px;
+    }
+    .features-information .features-title{
+        font-size: 25px;
+        padding: 10px 10px;
+     }
+     .features-details{
+        flex-direction: column;
+        justify-content: center;
+     }
+     .features-details-information .features-details-title{
+        font-size:25px;
+     }
+     .features-details-information{
+        width: 100%;
+        padding: 0 20px;
+     }
+     .features-details-img{
+        width: 100%;
+     }
+     .features-details-img img{
+        width:100%;
+    }
+    .features-details-img .experience{
+        width:150px;
+        position: inherit;
+        left: 0;
+        margin: 0 auto;
+        padding: 10px 15px;
+    }
+    .features-details-img .experience .experience-title{
+        font-size: 25px;
+    }
+    .features-details-img .experience .experience-desc{
+        font-size: 16px;
+    }
+    /* Responsive Facts Section */
+    .facts-section .facts-title{
+        text-align: center;
+        font-size: 25px;
+    }
+    .facts-section .facts-description{
+        width: 100%;
+        text-align: center;
+    }
+    .facts-items{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Customers Review Section */
+    .customers-review-section .customers-review-section-title{
+          font-size: 25px;
+    }
+    .customers{
+         flex-direction: column;
+    }
+    .customers .customer .customer-name{
+        font-size: 20px;
+    }
+    /* Sponsor Section Responsive */
+    .sponsors-section .sponsors-title{
+        font-size: 25px;
+    }
+    .sponsors-section .sponsors-description{
+        width: 100%;
+    }
+    .sponsors-section .sponsor-company{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .sponsors-section .sponsor-company img{
+        width: 30%;
+        margin-top: 10px;
+    }
+}
