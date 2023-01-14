@@ -449,6 +449,10 @@
         align-items: center;
         gap: 10px;
     }
+    .facts-items .facts-item:hover{
+        transform:rotate(360deg) scale(1);
+        border: 0;
+    }
     /* Customers Review Section */
     .customers-review-section .customers-review-section-title{
           font-size: 25px;
